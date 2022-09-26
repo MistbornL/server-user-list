@@ -5,10 +5,10 @@ require("dotenv").config();
 const option = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
 };
 
 const { MONGODB_URI } = process.env;
+console.log(MONGODB_URI);
 
 mongoose.connect(MONGODB_URI, option).then(
   function () {
