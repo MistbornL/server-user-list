@@ -18,8 +18,8 @@ app.use(express.json()); // parse json bodies
 app.get("/", (req, res) => {
   res.send("this is the test route to make sure server is working");
 });
-app.use("/users", Users);
-app.use("/user", UserRoutes); // send all "/user" requests to UserRouter for routing
+app.use("/users", cors({ origin: "*" }), Users);
+app.use("/user", cors({ origin: "*" }), UserRoutes); // send all "/user" requests to UserRouter for routing
 
 // APP LISTENER
 app.listen(PORT, () => log.green("SERVER STATUS", `Listening on port ${PORT}`));
