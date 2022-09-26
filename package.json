@@ -16,5 +16,6 @@
   "description": "A simple authentication server with block detelete and unblock options for users",
   "main": "server.js",
   "name": "auth-server",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "node-version": "16.13.0"
 }
