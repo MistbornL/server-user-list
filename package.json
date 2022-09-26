@@ -7,5 +7,14 @@
     "jsonwebtoken": "^8.5.1",
     "mercedlogger": "^1.0.1",
     "mongoose": "^6.6.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "author": "Mistborn",
+  "description": "A simple authentication server with block detelete and unblock options for users",
+  "main": "server.js",
+  "name": "auth-server",
+  "version": "1.0.0"
 }
