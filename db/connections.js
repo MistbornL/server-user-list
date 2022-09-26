@@ -3,10 +3,9 @@ const { log } = require("mercedlogger");
 require("dotenv").config();
 
 const option = {
-  socketTimeoutMS: 30000,
-  keepAlive: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 };
 
 const { MONGODB_URI } = process.env;
