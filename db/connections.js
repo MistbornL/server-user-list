@@ -7,7 +7,8 @@ const option = {
   useUnifiedTopology: true,
 };
 
-const { MONGODB_URI } = process.env;
+const MONGODB_URI =
+  "mongodb+srv://Mistborn:Niaxuri3@cluster0.rnzgxcg.mongodb.net/test";
 console.log(MONGODB_URI);
 
 mongoose.connect(MONGODB_URI, option).then(
